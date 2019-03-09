@@ -1,11 +1,19 @@
-public class Doctor {
-    String nume;
-    String par;
-    int varsta;
-    int kilograme;
-    boolean casatorit;
+public class Doctor extends Human {
+
+   private String par;
+   private int varsta;
+   private int kilograme;
+   private boolean casatorit;
 
 
+
+    public String getPar(){
+        return par;
+    }
+
+    public void setPar (String par){
+        this.par = par;
+    }
     public void consulta(){
         System.out.println("hai aici");
     }

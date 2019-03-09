@@ -2,7 +2,6 @@ import gina.Calculator;
 import gina.ExercitiiGrafice;
 import gina.OperatiiLogice;
 
-import java.util.Scanner;
 
 public class Main {
 
@@ -21,10 +20,46 @@ public class Main {
       calculator.convertesteInchMetri(34);
       calculator.calculExercitiu5(125,24);
       calculator.convertesteTemperatura(100);
+      calculator.sumAndAverage();
+      calculator.sumAndAverage2();
+      calculator.sumAndAverage3();
+      calculator.sumAndCount();
+      calculator.calculeazaSumaNrImpare();
+      calculator.calculeazaNrDiv();
+      calculator.fibonacci();
+      calculator.cozaLozaWoza();
 
       ExercitiiGrafice exercitiiGrafice= new ExercitiiGrafice();
       exercitiiGrafice.deseneazaJava();
       exercitiiGrafice.deseneazaOmulet();
+      System.out.println("Introdu un numar de la 0-9");
+      exercitiiGrafice.citesteNumereDeLa0La9();
+      System.out.println("Introdu orice numar sa verifici daca e par sau impar");
+      exercitiiGrafice.citesteNumarParSiImpar();
+      System.out.println("Introdu varsta unei persoane");
+      exercitiiGrafice.afiseazaVarsta();
+      System.out.println("Introdu 3 numere");
+      exercitiiGrafice.afiseazaCelMaiMareNumar();
+      System.out.println("Introdu un numar");
+      exercitiiGrafice.afiseazaNumar();
+      System.out.println("Introdu un numar");
+       exercitiiGrafice.afiseazaPatratulNumarului();
+      System.out.println("Introdu doua numere");
+      exercitiiGrafice.afiseazaImpartire();
+      System.out.println("Introdu patru numere");
+      exercitiiGrafice.afiseazaCelMaiMareNumarDin4();
+      System.out.println("Introdu trei numere");
+      exercitiiGrafice.afiseazaCelMaiMareNumarSiCelMaimic();
+      System.out.println("Introdu doua numere");
+      exercitiiGrafice.afiseazaInOrdine();
+      System.out.println("Introdu ce numer doresti");
+      exercitiiGrafice.numaraPanaLa100();
+      System.out.println("Introdu ce numer doresti");
+      exercitiiGrafice.numaraDescrescator();
+         exercitiiGrafice.desen();
+
+
+
 
       int res = calculator.adunare10(2, 3);
       System.out.println(res);
@@ -43,6 +78,7 @@ public class Main {
       operatiiLogice.numarAfisat(8);
       operatiiLogice.textSiNumar("este soare afara", 4);
       operatiiLogice.afisatText(7);
+      operatiiLogice.comparaNumarulCuTrei( 8);
 
 
 
@@ -76,16 +112,17 @@ public class Main {
 
 
       Doctor doctor = new Doctor();
+
       doctor.casatorit=true;
       doctor.kilograme=65;
-      doctor.nume= "Fanel";
-      doctor.par= "roscat";
+      doctor.setNume("Fanel");
+      doctor.setPar("roscat");
       doctor.varsta= 30;
 
       System.out.println(doctor.casatorit);
       System.out.println(doctor.kilograme);
-      System.out.println(doctor.nume);
-      System.out.println(doctor.par);
+      System.out.println(doctor.getNume());
+      System.out.println(doctor.getPar());
       System.out.println(doctor.varsta);
   }
 

@@ -1,4 +1,4 @@
-public class Cat {
+public class Cat extends Animal {
     String culoare;
     int varsta;
     float greutate;

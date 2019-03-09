@@ -43,6 +43,18 @@ public class OperatiiLogice {
         }
     }
 
+    public void comparaNumarulCuTrei(int numar){
+        if (numar > 3 && numar != 4 ) {
+            System.out.println("The number is greater than 3 and not equal to 4");
+        } else if (numar == 4) {
+            System.out.println("The number is equal to 4");
+
+        } else if (numar < 3){
+            System.out.println("The number is equal to 4");
+        }
+    }
+
+
 }
 
 
