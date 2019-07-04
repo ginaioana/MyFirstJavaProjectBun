@@ -29,6 +29,40 @@ public class Main {
       calculator.fibonacci();
       calculator.cozaLozaWoza();
 
+      //ex 2, lab 13
+      calculator.myArray100();
+
+      // ex 4, lab 13
+      calculator.medMyArray();
+
+      // ex 3, lab13
+      int[] a = new int[50];
+      int[] arrayDePare = calculator.parMyArray(a);
+      for (int i=0; i<50; i++) {
+          System.out.println(arrayDePare[i]);
+      }
+
+      //ex 5 lab 13
+      String[] array= new String[]{"1","2","3","4"};
+      boolean aGasit = calculator.checkIfMyStringIsInArray(array, "3");
+      System.out.println("ex 5: " + aGasit);
+
+
+      // ex 6 lab 13
+      int[] arrayNew= new int[]{1,2,3,4};
+      calculator.checkIfMyArrayPossiton(arrayNew, 3);
+      int pozitie=  calculator.checkIfMyArrayPossiton(arrayNew, 3);
+      System.out.println(pozitie);
+
+      // ex.8 lab 13
+      int[] c = new int[50];
+      int[] arreySecond = calculator.returnMyArray(a, 3);
+      for (int i=0; i<50; i++) {
+          System.out.println("ex 8: " + arreySecond[i]);
+      }
+
+
+
       ExercitiiGrafice exercitiiGrafice= new ExercitiiGrafice();
       exercitiiGrafice.deseneazaJava();
       exercitiiGrafice.deseneazaOmulet();
@@ -56,7 +90,10 @@ public class Main {
       exercitiiGrafice.numaraPanaLa100();
       System.out.println("Introdu ce numer doresti");
       exercitiiGrafice.numaraDescrescator();
-         exercitiiGrafice.desen();
+      exercitiiGrafice.desen();
+
+     // ex 7 lab 13
+      exercitiiGrafice.printArrayPicture();
 
 
 
@@ -78,53 +115,58 @@ public class Main {
       operatiiLogice.numarAfisat(8);
       operatiiLogice.textSiNumar("este soare afara", 4);
       operatiiLogice.afisatText(7);
-      operatiiLogice.comparaNumarulCuTrei( 8);
+      operatiiLogice.comparaNumarulCuTrei(8);
 
 
 
       Dog lisa = new Dog();
-      lisa.culoare= "maro";
-      lisa.greutate= 6.5f;
-      lisa.nume= "Lisa";
-      lisa.rasa="lup";
-      lisa.varsta=1;
+      lisa.setCuloare("maro");
+      lisa.setGreutate(6.5f);
+      lisa.setNume("Lisa");
+      lisa.setRasa("lup");
+      lisa.setVarsta(2);
 
 
-      System.out.println(lisa.culoare);
-      System.out.println(lisa.greutate);
-      System.out.println(lisa.nume);
-      System.out.println(lisa.rasa);
-      System.out.println(lisa.varsta);
+      System.out.println(lisa.getCuloare());
+      System.out.println(lisa.getGreutate());
+      System.out.println(lisa.getNume());
+      System.out.println(lisa.getRasa());
+      System.out.println(lisa.getVarsta());
 
 
       Cat figaro = new Cat();
-      figaro.culoare = "roscovan";
-      figaro.greutate = 1.5f;
-      figaro.nume = "Figaro";
-      figaro.rasa = "cea mai frumoasa";
-      figaro.varsta= 1;
+      figaro.setCuloare("roscovan");
+      figaro.setGreutate(1.5f);
+      figaro.setNume("Figaro");
+      figaro.setRasa("cea mai frumoasa");
+      figaro.setVarsta(1);
 
-      System.out.println(figaro.culoare);
-      System.out.println(figaro.greutate);
-      System.out.println(figaro.nume);
-      System.out.println(figaro.rasa);
-      System.out.println(figaro.varsta);
+      System.out.println(figaro.getCuloare());
+      System.out.println(figaro.getGreutate());
+      System.out.println(figaro.getNume());
+      System.out.println(figaro.getRasa());
+      System.out.println(figaro.getVarsta());
 
 
       Doctor doctor = new Doctor();
 
-      doctor.casatorit=true;
-      doctor.kilograme=65;
+      doctor.setCasatorit(true);
+      doctor.setKilograme( 65 );
       doctor.setNume("Fanel");
       doctor.setPar("roscat");
-      doctor.varsta= 30;
+      doctor.setVarsta(30);
 
-      System.out.println(doctor.casatorit);
-      System.out.println(doctor.kilograme);
+      System.out.println(doctor.getCasatorit());
+      System.out.println(doctor.getKilograme());
       System.out.println(doctor.getNume());
       System.out.println(doctor.getPar());
-      System.out.println(doctor.varsta);
+      System.out.println(doctor.getVarsta());
+
+
+
+
   }
+
 
 
 }

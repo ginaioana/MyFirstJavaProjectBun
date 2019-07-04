@@ -192,14 +192,28 @@ public class ExercitiiGrafice {
 
     public void desen() {
 
-        for (int i = 0 ; i <= 6; i++) {
-            for (int a = 1; a <= 7-i; a++) {
+        for (int i = 0; i <= 6; i++) {
+            for (int a = 1; a <= 7 - i; a++) {
                 System.out.print("*");
             }
             System.out.println();
         }
     }
 
+    public void printArrayPicture() {
+        String[] myArray = new String[10];
+        for (int i = 0; i < 10; i++) {
+            myArray[i] = " _ ";
+        }
+
+
+        for (int i = 0; i < 10; i++) {
+            for ( int a= 1; a  < 10; a++){
+            System.out.print(myArray[i]);
+
+        }
+        System.out.println();
+    }
 
 }
-
+}

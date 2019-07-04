@@ -221,4 +221,82 @@ public class Calculator {
         }
     }
 
+    public void myArray100() {
+        int[] myArray = new int[100];
+
+        int j = 0;
+        for (int i = 1; i <= 100; i++) {
+            myArray[j] = i;
+            j++;
+
+        }
+        for (int i = 0; i < myArray.length; i++) {
+            System.out.println(myArray[i]);
+
+        }
+    }
+
+
+    public void medMyArray() {
+        int[] myArray = new int[100];
+
+        int j = 0;
+        for (int i = 1; i <= 100; i++) {
+            myArray[j] = i;
+            j++;
+
+        }
+        float sum = 0;
+        for (int i = 0; i < myArray.length; i++) {
+            sum = sum + myArray[i];
+        }
+        System.out.println(sum / myArray.length);
+    }
+
+    public int[] parMyArray(int[] myArray) {
+        int j = 0;
+
+        for (int i = 1; i <= 100; i++) {
+            if (i % 2 == 0) {
+                myArray[j++] = i;
+            }
+        }
+        return myArray;
+    }
+
+    public boolean checkIfMyStringIsInArray(String[] a, String b) {
+
+        boolean isFound = false;
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] == b) {
+                isFound = true;
+            }
+        }
+        return isFound;
+    }
+
+    public int checkIfMyArrayPossiton(int[] a, int b) {
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] == b) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public int[] returnMyArray(int[] a, int b) {
+        int[] rezultat = new int[a.length];
+        int j = 0;
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] != b) {
+                rezultat[j] = a[i];
+                j++;
+            }
+
+        }
+        return rezultat;
+
+    }
+
+
 }
