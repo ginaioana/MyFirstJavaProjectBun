@@ -177,8 +177,6 @@ public class Main {
         operatiiLogice.myArray2(myArray2, 16);
 
 
-
-
 //      Dog lisa = new Dog();
 //      lisa.setCuloare("maro");
 //      lisa.setGreutate(6.5f);
