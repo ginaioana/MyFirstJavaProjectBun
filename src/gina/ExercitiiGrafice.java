@@ -213,7 +213,9 @@ public class ExercitiiGrafice {
 
         }
         System.out.println();
+
     }
 
 }
 }
+

@@ -169,6 +169,14 @@ public class Main {
       int a = operatiiLogice.getMaxFromList(myList);
       System.out.println(a);
 
+      // ex 5 lab 15
+      int[] myArray2 = new int[10];
+      for (int i = 0; i < myArray2.length; i++) {
+          myArray2[i] = i;
+      }
+        operatiiLogice.myArray2(myArray2, 16);
+
+
 
 
 //      Dog lisa = new Dog();

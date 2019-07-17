@@ -2,6 +2,7 @@ package gina;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class OperatiiLogice {
 
@@ -130,7 +131,20 @@ public class OperatiiLogice {
 
         return a;
     }
+
+    public  void myArray2(int[] myArray2, int b) {
+
+        try {
+            System.out.println(myArray2[b]);
+        } catch (Exception e) {
+            System.out.println("Inside catch, number too large");
+        }
+
+
+    }
 }
+
+
 
 
 
